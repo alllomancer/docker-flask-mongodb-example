@@ -34,7 +34,7 @@ jobs:
         env:
           KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG }}
         with:
-          args: create ns ${{ steps.extract_branc.outputs.branch }}
+          args: create ns ${{ steps.extract_branch.outputs.branch }}
 
 
 
