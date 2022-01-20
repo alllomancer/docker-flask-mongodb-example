@@ -24,7 +24,7 @@ jobs:
           context: .
           file: ./nexite/Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/mongo:${GITHUB_REF#refs/heads/}
+          tags: alllomancer/python:${GITHUB_REF#refs/heads/}
 
 
 
