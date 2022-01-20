@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: fulltext-search-conainer
-          image: danionescu/docker-flask-mongodb-example-python-default:latest
+          image: alllomancer/python:${{ steps.extract_branch.outputs.branch }}
           command: ["python", "/root/flask-mongodb-example/fulltext_search.py", "mongodb-service.default.svc.cluster.local"]
           imagePullPolicy: Always
           ports:
